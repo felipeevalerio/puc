@@ -7,29 +7,24 @@ public class Carro{
         return ano;
     }
 
-    public int setAno(int ano){
-        if(ano > 2021){
-            System.out.println("Ano Inválido.");
-            return this.ano = 2021;
-        }
-
-        return this.ano = ano;
+    public void setAno(int ano){
+        this.ano = ano > 2021 ? 2021 : ano;
     }
 
     public String getCor(){
         return cor;
     }
 
-    public String setCor(String cor){
-        return this.cor = cor;
+    public void setCor(String cor){
+        this.cor = cor;
     }
 
     public double getVelocidadeTotal(){
         return velocidadeTotal;
     }
 
-    public double setVelocidadeTotal(double velocidade){
-        return this.velocidadeTotal = velocidade;
+    public void setVelocidadeTotal(double velocidade){
+        this.velocidadeTotal = velocidade;
     }
 
 }
