@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ex05",
+      "request": "launch",
+      "mainClass": "ex05",
+      "projectName": "lista-01-verde_a52c5557"
+    },
+    {
+      "type": "java",
       "name": "Launch ex04",
       "request": "launch",
       "mainClass": "ex04",
