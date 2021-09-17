@@ -1,0 +1,43 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch ex04",
+      "request": "launch",
+      "mainClass": "ex04",
+      "projectName": "lista-01-verde_a52c5557"
+    },
+    {
+      "type": "java",
+      "name": "Launch ex03",
+      "request": "launch",
+      "mainClass": "ex03",
+      "projectName": "lista-01-verde_a52c5557"
+    },
+    {
+      "name": "gcc-9 - Build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "C/C++: gcc-9 build active file",
+      "miDebuggerPath": "/usr/bin/gdb"
+    }
+  ]
+}
