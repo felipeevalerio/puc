@@ -68,4 +68,7 @@ public class CFila {
     return false;
   }
 
+  public int quantidade() {
+    return qntd;
+  }
 }

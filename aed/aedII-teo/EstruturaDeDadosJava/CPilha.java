@@ -3,7 +3,7 @@ public class CPilha {
   private int qntd;
 
   public boolean vazia() {
-    return topo != null;
+    return topo == null;
   }
 
   public void empilha(Object valorItem) {
@@ -16,6 +16,7 @@ public class CPilha {
     if (topo != null) {
       item = topo.item;
       topo = topo.prox;
+      qntd--;
     }
     return item;
   }
@@ -40,6 +41,10 @@ public class CPilha {
 
   public Object peek() {
     return (topo != null) ? topo.item : null;
+  }
+
+  public int quantidade() {
+    return qntd;
   }
 
 }
